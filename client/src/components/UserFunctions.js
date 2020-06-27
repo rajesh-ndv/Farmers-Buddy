@@ -12,7 +12,35 @@ export const register = newUser => {
       console.log('Registered')
     })
 }
-
+export const addCrop = newCrop => {
+  return axios
+    .post('addCrop/add', {
+      email: newCrop.email,
+      phone: newCrop.phone,
+      village: newCrop.village,
+      district: newCrop.district,
+      state: newCrop.state,
+      crop: newCrop.crop,
+      soil: newCrop.soil,
+      area: newCrop.area
+    })
+    .then(response => {
+      console.log('Registered')
+    })
+}
+export const query = newQuery => {
+  return axios
+    .post('query/addq', {
+      email: newQuery.email,
+      phone: newQuery.phone,
+      crop: newQuery.crop,
+      query: newQuery.query,
+      isAnswered: false
+    })
+    .then(response => {
+      console.log('Query Posted Succesfully')
+    })
+}
 export const login = user => {
   return axios
     .post('users/login', {

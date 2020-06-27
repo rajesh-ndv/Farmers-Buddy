@@ -6,7 +6,9 @@ import Landing from './components/Landing'
 import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile'
-
+import AddCrop from './components/AddCrop'
+import Query from './components/Query'
+import Footer from './components/Footer'
 class App extends Component {
   render() {
     return (
@@ -18,6 +20,8 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/addCrop" component={AddCrop}/>
+            <Route exact path="/query" component={Query}/>
           </div>
         </div>
       </Router>

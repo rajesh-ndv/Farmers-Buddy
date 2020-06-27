@@ -4,7 +4,7 @@ const connectDB=async()=>{
     mongoose.connect(URI,{
         useUnifiedTopology:true,
         useNewUrlParser:true
-    });
+    }).catch(err => console.log(err.reason));
     console.log("DB connected");
 }
 module.exports=connectDB;

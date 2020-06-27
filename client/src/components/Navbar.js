@@ -36,6 +36,21 @@ class Landing extends Component {
             Logout
           </a>
         </li>
+        <li className="nav-item">
+          <Link to="/addCrop" className="nav-link">
+            Add Crop
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/query" className="nav-link">
+            Post Query
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/getw" className="nav-link">
+            Weather
+          </Link>
+        </li>
       </ul>
     )
 
